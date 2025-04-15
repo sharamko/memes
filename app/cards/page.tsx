@@ -2,7 +2,14 @@ import { Metadata } from 'next';
 import TablePage from './MemeListPage';
 
 export default function Page() {
-  return <TablePage />;
+  return (
+    <>
+      <h1 className="font-medium text-2xl md:text-4xl text-sky-500 mb-4">
+        Бібліотека популярних мемів в картках
+      </h1>
+      <TablePage />
+    </>
+  );
 }
 
 export const metadata: Metadata = {

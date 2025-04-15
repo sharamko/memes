@@ -1,6 +1,7 @@
 'use client';
 
 import { useMemeStore } from '@/store/useMemeStore';
+import { Meme } from '@/types/meme';
 import {
   Table,
   TableHeader,
@@ -18,13 +19,6 @@ import {
   Spinner,
 } from '@heroui/react';
 import { Key, useState } from 'react';
-
-type Meme = {
-  id: number;
-  title: string;
-  imageUrl: string;
-  likes: number;
-};
 
 const columns = [
   { name: 'ID', uid: 'id' },

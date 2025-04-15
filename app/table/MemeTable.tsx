@@ -75,7 +75,7 @@ const MemeTable = () => {
         return meme.likes;
       case 'actions':
         return (
-          <Button onClick={() => handleOpen(meme)} color="primary" size="sm">
+          <Button onPress={() => handleOpen(meme)} color="primary" size="sm">
             Редагувати
           </Button>
         );
@@ -96,7 +96,7 @@ const MemeTable = () => {
   }
 
   return (
-    <div className="p-1">
+    <div className="p-4">
       <Table aria-label="Таблиця мемів">
         <TableHeader columns={columns}>
           {(column) => (

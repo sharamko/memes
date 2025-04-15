@@ -4,7 +4,7 @@ import TablePage from './MemeListPage';
 export default function Page() {
   return (
     <>
-      <h1 className="font-medium text-2xl md:text-4xl text-sky-500 mb-4">
+      <h1 className="font-medium px-4 text-2xl md:text-4xl text-sky-500 mb-4">
         Бібліотека популярних мемів в картках
       </h1>
       <TablePage />
